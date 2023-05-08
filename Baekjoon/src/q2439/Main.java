@@ -42,19 +42,25 @@ public class Main {
 //			System.out.println();
 //		}
 		
-		for (int i = 0; i < inp; i++) {
-			for (int j=inp-i-1; j>0; j--) {
-				System.out.print("?");
-			}
-			for (int j = 0; j<1+i; j++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
+//		for (int i = 0; i < inp; i++) {
+//			for (int j=inp-i-1; j>0; j--) {
+//				System.out.print("?");
+//			}
+//			for (int j = 0; j<1+i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+		
+		 for (int i = 0, j = inp; i < inp; /*|| j < inp && j > 0;*/ i++, j--) {
+	         String b = " ".repeat(j - 1);
+	         String s = "*".repeat(i + 1);
+	         System.out.println(b + s);
+	      }
+	   }
 
 	}
 
-}
 
 
 //		제일 바깥쪽 for문은 행
