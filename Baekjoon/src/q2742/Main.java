@@ -9,10 +9,24 @@ public class Main {
 		int inp = sc.nextInt();
 		sc.close();
 
-		for (int sum = 0; (inp - sum) > 0; sum++) {
-			System.out.println(inp - sum);
+		//1.for문
+		for (int i = inp; i > 0; i--) {
+			System.out.println(i);
 		}
 
+		//2.while문
+		int i=0;
+		while(i<inp) {
+			System.out.println(inp - i);
+			i++;
+		}
+		
+		//3.do~while문
+		int j=inp;
+		do {
+			System.out.println(j);	
+			j--;
+		}while(j>0);
 	}
 
 }
