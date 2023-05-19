@@ -9,10 +9,25 @@ public class Main {
 		int inp = sc.nextInt();
 		sc.close();
 
-		for (int sum = 1; (inp - inp) + sum <= inp; sum++) {
-			System.out.println((inp - inp) + sum);
+		//1.for문
+		for (int i = 1; i <= inp; i++) {
+			System.out.println(i);
+		}
+	
+		//2. while문
+		int i=1;
+		while(i<=inp) {
+			System.out.println(i);
+			i++;
 		}
 		
+		//3.do~while문
+		int j=1;
+		do {
+			System.out.println(j);
+			j++;
+		}while(j<=inp);
+
 	}
 
 }
