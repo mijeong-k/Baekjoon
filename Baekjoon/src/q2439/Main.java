@@ -57,6 +57,8 @@ public class Main {
 	         String s = "*".repeat(i + 1);
 	         System.out.println(b + s);
 	      }
+		 
+
 	   }
 
 	}
